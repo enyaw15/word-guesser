@@ -1,8 +1,10 @@
 use std::io;
 use std::collections::HashSet;
+use rand::Rng;
+
 fn main() {
     let words = ["hello", "world", "potato", "racecar", "tiger", "string", "rust" , "quiz"];
-    let word = words[0];
+    let word = words[rand::thread_rng().gen_range(0..words.len())];
     let word_len = word.len();
     let mut guesses:HashSet<char> = HashSet::new();
     let mut guess_count = 0;

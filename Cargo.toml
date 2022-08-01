@@ -1,5 +1,5 @@
 [package]
-name = "guess-word"
+name = "word-guesser"
 version = "0.1.0"
 edition = "2021"
 
